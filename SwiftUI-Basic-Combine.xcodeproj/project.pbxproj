@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		9A622D6A236A8D05003BB3B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A622D69236A8D05003BB3B8 /* AppDelegate.swift */; };
 		9A622D6C236A8D05003BB3B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A622D6B236A8D05003BB3B8 /* SceneDelegate.swift */; };
-		9A622D6E236A8D05003BB3B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A622D6D236A8D05003BB3B8 /* ContentView.swift */; };
+		9A622D6E236A8D05003BB3B8 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A622D6D236A8D05003BB3B8 /* PostView.swift */; };
 		9A622D70236A8D06003BB3B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A622D6F236A8D06003BB3B8 /* Assets.xcassets */; };
 		9A622D73236A8D06003BB3B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A622D72236A8D06003BB3B8 /* Preview Assets.xcassets */; };
 		9A622D76236A8D06003BB3B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A622D74236A8D06003BB3B8 /* LaunchScreen.storyboard */; };
 		9A622D81236A8D06003BB3B8 /* SwiftUI_Basic_CombineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A622D80236A8D06003BB3B8 /* SwiftUI_Basic_CombineTests.swift */; };
 		9A622D8C236A8D06003BB3B8 /* SwiftUI_Basic_CombineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A622D8B236A8D06003BB3B8 /* SwiftUI_Basic_CombineUITests.swift */; };
+		9A622D9D236A8E27003BB3B8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A622D9C236A8E27003BB3B8 /* Model.swift */; };
+		9A622DA7236BDCED003BB3B8 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A622DA6236BDCED003BB3B8 /* APIService.swift */; };
+		9A622DA9236BDE3B003BB3B8 /* APIServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A622DA8236BDE3B003BB3B8 /* APIServiceError.swift */; };
+		9A622DAB236C08CF003BB3B8 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A622DAA236C08CF003BB3B8 /* PostViewModel.swift */; };
+		9A622DAD236C0AAE003BB3B8 /* PostRepositoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A622DAC236C0AAE003BB3B8 /* PostRepositoryRequest.swift */; };
+		9A78E9CD236FCE2A005EE9B1 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A78E9CC236FCE2A005EE9B1 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +44,7 @@
 		9A622D66236A8D05003BB3B8 /* SwiftUI-Basic-Combine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Basic-Combine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A622D69236A8D05003BB3B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A622D6B236A8D05003BB3B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9A622D6D236A8D05003BB3B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9A622D6D236A8D05003BB3B8 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		9A622D6F236A8D06003BB3B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A622D72236A8D06003BB3B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9A622D75236A8D06003BB3B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +55,12 @@
 		9A622D87236A8D06003BB3B8 /* SwiftUI-Basic-CombineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-Basic-CombineUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A622D8B236A8D06003BB3B8 /* SwiftUI_Basic_CombineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Basic_CombineUITests.swift; sourceTree = "<group>"; };
 		9A622D8D236A8D06003BB3B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A622D9C236A8E27003BB3B8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		9A622DA6236BDCED003BB3B8 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		9A622DA8236BDE3B003BB3B8 /* APIServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceError.swift; sourceTree = "<group>"; };
+		9A622DAA236C08CF003BB3B8 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		9A622DAC236C0AAE003BB3B8 /* PostRepositoryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepositoryRequest.swift; sourceTree = "<group>"; };
+		9A78E9CC236FCE2A005EE9B1 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +111,11 @@
 		9A622D68236A8D05003BB3B8 /* SwiftUI-Basic-Combine */ = {
 			isa = PBXGroup;
 			children = (
-				9A622D69236A8D05003BB3B8 /* AppDelegate.swift */,
-				9A622D6B236A8D05003BB3B8 /* SceneDelegate.swift */,
-				9A622D6D236A8D05003BB3B8 /* ContentView.swift */,
-				9A622D6F236A8D06003BB3B8 /* Assets.xcassets */,
-				9A622D74236A8D06003BB3B8 /* LaunchScreen.storyboard */,
-				9A622D77236A8D06003BB3B8 /* Info.plist */,
+				9A622D9E236A8F18003BB3B8 /* API */,
+				9A622D9B236A8DBC003BB3B8 /* Model */,
+				9A622DA5236BDCAB003BB3B8 /* ViewModel */,
+				9A622D9A236A8D22003BB3B8 /* View */,
+				9A622D99236A8D15003BB3B8 /* Supporting Files */,
 				9A622D71236A8D06003BB3B8 /* Preview Content */,
 			);
 			path = "SwiftUI-Basic-Combine";
@@ -134,6 +145,53 @@
 				9A622D8D236A8D06003BB3B8 /* Info.plist */,
 			);
 			path = "SwiftUI-Basic-CombineUITests";
+			sourceTree = "<group>";
+		};
+		9A622D99236A8D15003BB3B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A622D69236A8D05003BB3B8 /* AppDelegate.swift */,
+				9A622D6B236A8D05003BB3B8 /* SceneDelegate.swift */,
+				9A622D6F236A8D06003BB3B8 /* Assets.xcassets */,
+				9A622D74236A8D06003BB3B8 /* LaunchScreen.storyboard */,
+				9A622D77236A8D06003BB3B8 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9A622D9A236A8D22003BB3B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9A622D6D236A8D05003BB3B8 /* PostView.swift */,
+				9A78E9CC236FCE2A005EE9B1 /* LoadingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9A622D9B236A8DBC003BB3B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9A622D9C236A8E27003BB3B8 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9A622D9E236A8F18003BB3B8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				9A622DA6236BDCED003BB3B8 /* APIService.swift */,
+				9A622DA8236BDE3B003BB3B8 /* APIServiceError.swift */,
+				9A622DAC236C0AAE003BB3B8 /* PostRepositoryRequest.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		9A622DA5236BDCAB003BB3B8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9A622DAA236C08CF003BB3B8 /* PostViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,9 +325,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A622DAB236C08CF003BB3B8 /* PostViewModel.swift in Sources */,
+				9A622DAD236C0AAE003BB3B8 /* PostRepositoryRequest.swift in Sources */,
 				9A622D6A236A8D05003BB3B8 /* AppDelegate.swift in Sources */,
+				9A622DA9236BDE3B003BB3B8 /* APIServiceError.swift in Sources */,
 				9A622D6C236A8D05003BB3B8 /* SceneDelegate.swift in Sources */,
-				9A622D6E236A8D05003BB3B8 /* ContentView.swift in Sources */,
+				9A622D6E236A8D05003BB3B8 /* PostView.swift in Sources */,
+				9A622DA7236BDCED003BB3B8 /* APIService.swift in Sources */,
+				9A622D9D236A8E27003BB3B8 /* Model.swift in Sources */,
+				9A78E9CD236FCE2A005EE9B1 /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +501,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Basic-Combine/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "SwiftUI-Basic-Combine/Info.plist";
+				INFOPLIST_FILE = "SwiftUI-Basic-Combine/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,7 +520,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Basic-Combine/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "SwiftUI-Basic-Combine/Info.plist";
+				INFOPLIST_FILE = "SwiftUI-Basic-Combine/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
