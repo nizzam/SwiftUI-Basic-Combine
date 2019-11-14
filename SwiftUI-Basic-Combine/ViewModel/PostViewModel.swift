@@ -23,10 +23,9 @@ class PostViewModel: ObservableObject {
     @Published var errorMessage = ""
     @Published var isErrorShown = false
     
+    private let apiService: APIServiceType
     
-    private let apiService: APIService
-    
-    init(apiService: APIService = APIService()) {
+    init(apiService: APIServiceType = APIService()) {
         self.apiService = apiService
         
         setupInputs()
